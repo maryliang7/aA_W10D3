@@ -1,0 +1,26 @@
+
+.board-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.tile {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  background-color: grey;
+  border: 1px dashed lightgrey;
+}
+
+.tile.revealed {
+  background-color: lightgrey;
+  color: red;
+}
+
+.tile.flagged {
+
+}
+
+.tile.bombed.revealed {
+  background-color: red;
+}
