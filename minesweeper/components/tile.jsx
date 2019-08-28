@@ -15,11 +15,11 @@ export default class Tile extends React.Component {
     if (tile.flagged === true) {
       return "⚑";
     } else if (tile.explored === false) {
-      return " ";
+      return "";
     } else if (tile.explored && tile.bombed) {
       return "💣";
     } else if (tile.explored && num > 0) {
-      return `${num}`;
+      return num;
     }
   }
 
@@ -44,7 +44,7 @@ export default class Tile extends React.Component {
 
   render() {
     return (
-      <div className={this.tileClass()} onClick={this.handleClick}>{this.tileText()}</div>
+    <div className={this.tileClass()} onClick={this.handleClick}>{this.tileText()}</div>
     );
   }
 }
