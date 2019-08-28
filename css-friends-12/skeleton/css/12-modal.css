@@ -1,0 +1,52 @@
+/* PHASE 12: Modal */
+
+.modal-screen {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-form {
+  position: absolute;
+  top: 100px;
+  width: 400px;
+  z-index: 3;
+  left: 50%;
+  margin: 0px -200px;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+}
+
+.modal-form fieldset {
+  width: 400px;
+}
+
+.modal-form h1 {
+  font-size: 35px;
+  font-weight: lighter;
+}
+
+.modal-form p {
+  margin-bottom: 15px;
+}
+
+.form-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.x-button {
+  font-size: 38px;
+  margin: 0;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
