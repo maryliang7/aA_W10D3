@@ -1,0 +1,5 @@
+#this is some commented text hi
+
+node_modules/
+bundle.js
+bundle.js.map
