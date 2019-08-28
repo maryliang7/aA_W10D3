@@ -1,6 +1,23 @@
 
-.board {
+
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 30px;
   font-family: sans-serif;
+  margin: 5px 0px;
+}
+
+h2 {
+  font-family: sans-serif;
+  color: grey;
+  font-weight: lighter;
 }
 
 .board-row {
@@ -15,14 +32,20 @@
   background-color: grey;
   border: 1px dashed lightgrey;
   text-align: center;
+  font-family: sans-serif;
   /* display: table-cell;
   vertical-align: middle; */
+}
+
+.tile:hover {
+  background-color: #555;
 }
 
 .tile.explored {
   background-color: lightgrey;
   border: 1px dashed grey;
-  color: red;
+  color: grey;
+  font-weight: bold;
 }
 
 .tile.flagged {
@@ -53,9 +76,31 @@
   z-index: 3;
   position: relative;
   top: 300px;
-  width: 300px;
-  margin: -150px;
+  width: 150px;
+  margin: -75px;
   left: 50%;
   background-color: white;
   padding: 20px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border-radius: 20px; */
+}
+
+
+.alert h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.alert button {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+.alert button:hover {
+  background-color: red
+  
 }

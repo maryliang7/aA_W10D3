@@ -32,6 +32,8 @@ export default class Game extends React.Component {
   render() {
     return (
     <div className="game">
+      <h1>minesweeper</h1>
+      <h2>explore with click • flag with alt+click • flag all the mines</h2>
       <Board board={this.state.board} updateGame={this.updateGame}/>
       <div className={this.state.board.lost() || this.state.board.won() ? "modal" : "modal hidden"}>
         <div className="alert">

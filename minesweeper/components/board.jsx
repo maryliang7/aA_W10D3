@@ -6,7 +6,6 @@ import Tile from "./tile.jsx";
 export default class Game extends React.Component {
   constructor(props) {
     super(props);
-    console.log(this.props.board.grid);
   }
 
   render() {
